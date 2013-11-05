@@ -1,11 +1,29 @@
 form[name="register"] {
 	position: relative;
 	label {
-		border: 1px solid $border;
+		border-left: 1px solid $border;
+		border-top: 1px solid $border;
 		background: $label;
 		padding: $padding;
+		display: inline-block;
+		color: darken($label,40%);
+		border-top-left-radius: $corners;
 	}
-	[name="submit"] {
+	select {
+		display: block;
+		margin-bottom: $padding;
+	}
+	[type="text"], [type="email"], [type="password"] {
+		display: inline-block!important;
+		border-top-right-radius: $corners;
+		border: 1px solid $border;
+		border-left: none;
+	}
+	[name="surname"] {
+		border-radius: 0;
+	}
+
+}
+	[name="register-but"] {
 		@include button($green);
 	}
-}

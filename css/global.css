@@ -469,15 +469,11 @@ h2 {
 input {
   font-size: 20px;
   color: #bcbcbc;
-  border: 1px solid #969696;
-  display: block;
-  width: 100%;
   box-sizing: border-box;
   padding: 16px;
-  position: relative;
 }
 
-/* line 12, ../sass/_forms.scss */
+/* line 8, ../sass/_forms.scss */
 [name="submit"] {
   color: white;
   font-weight: bold;
@@ -492,12 +488,18 @@ form[name="login"] {
   position: relative;
 }
 /* line 3, ../sass/_login.scss */
+form[name="login"] [name="username"], form[name="login"] [name="password"], form[name="login"] [name="submit"] {
+  width: 100%;
+  position: relative;
+  border: 1px solid #969696;
+}
+/* line 8, ../sass/_login.scss */
 form[name="login"] [name="username"] {
   background: white url(../images/icon-ampersand.gif) no-repeat 95% 50%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-/* line 8, ../sass/_login.scss */
+/* line 13, ../sass/_login.scss */
 form[name="login"] [name="password"] {
   background: white url(../images/icon-lock.gif) no-repeat 95% 50%;
   border-bottom-right-radius: 8px;
@@ -505,14 +507,14 @@ form[name="login"] [name="password"] {
   top: -3px;
   margin-bottom: 18px;
 }
-/* line 15, ../sass/_login.scss */
+/* line 20, ../sass/_login.scss */
 form[name="login"] [name="submit"] {
   background: #f0b323;
   border: 1px solid #ba860d;
   box-shadow: 0 1px 1px #a2750b, inset 0 1px 1px 0 #f8dc9a;
 }
 
-/* line 19, ../sass/_login.scss */
+/* line 24, ../sass/_login.scss */
 .intro {
   text-align: center;
   font-weight: bold;
@@ -526,12 +528,33 @@ form[name="register"] {
 }
 /* line 3, ../sass/_register.scss */
 form[name="register"] label {
-  border: 1px solid #969696;
-  background: #c9c9c9;
+  border-left: 1px solid #969696;
+  border-top: 1px solid #969696;
+  background: #efefef;
   padding: 16px;
+  display: inline-block;
+  color: #898989;
+  border-top-left-radius: 8px;
 }
-/* line 8, ../sass/_register.scss */
-form[name="register"] [name="submit"] {
+/* line 12, ../sass/_register.scss */
+form[name="register"] select {
+  display: block;
+  margin-bottom: 16px;
+}
+/* line 16, ../sass/_register.scss */
+form[name="register"] [type="text"], form[name="register"] [type="email"], form[name="register"] [type="password"] {
+  display: inline-block !important;
+  border-top-right-radius: 8px;
+  border: 1px solid #969696;
+  border-left: none;
+}
+/* line 22, ../sass/_register.scss */
+form[name="register"] [name="surname"] {
+  border-radius: 0;
+}
+
+/* line 27, ../sass/_register.scss */
+[name="register-but"] {
   background: #81be1d;
   border: 1px solid #547c13;
   box-shadow: 0 1px 1px #45660f, inset 0 1px 1px 0 #bce971;

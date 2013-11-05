@@ -1,5 +1,10 @@
 form[name="login"] {
 	position: relative;
+	[name="username"], [name="password"], [name="submit"] {
+		width: 100%;
+		position: relative;	
+		border: 1px solid $border;
+	}
 	[name="username"] {
 		background: #fff url(../images/icon-ampersand.gif) no-repeat 95% 50%;
 		border-top-left-radius: $corners;
@@ -13,7 +18,7 @@ form[name="login"] {
 		margin-bottom: $gutter;
 	}
 	[name="submit"] {
-		@include button($yellow);		
+		@include button($yellow);	
 	}
 }
 .intro {
