@@ -1,0 +1,24 @@
+form[name="login"] {
+	position: relative;
+	[name="username"] {
+		background: #fff url(../images/icon-ampersand.gif) no-repeat 95% 50%;
+		border-top-left-radius: $corners;
+		border-top-right-radius: $corners;
+	}		
+	[name="password"] {
+		background: #fff url(../images/icon-lock.gif) no-repeat 95% 50%;
+		border-bottom-right-radius: $corners;
+		border-bottom-left-radius: $corners;
+		top: -3px;
+		margin-bottom: $gutter;
+	}
+	[name="submit"] {
+		@include button($yellow);		
+	}
+}
+.intro {
+	text-align: center;
+	font-weight: bold;
+	width: 80%;
+	margin: 0 auto;
+}

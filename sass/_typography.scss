@@ -1,0 +1,25 @@
+p, li, input, a, label {
+	@include font-stack-body();
+}
+a {
+	color: $blue;
+}
+p {
+	color: lighten($gray, 10%);
+	font-size: 18px; 
+	margin-top: 0;
+}
+h1 {
+	@include font-stack-headers();
+	color: $blue;
+	font-size: 42px;
+	font-weight: bold;
+	text-align: center;;
+}
+h2 {
+	@include font-stack-body();
+	color: $gray;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}

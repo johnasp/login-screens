@@ -4,3 +4,8 @@
 @mixin font-stack-body {
 	font-family: proxima_nova_softregular, sans-serif;
 }
+@mixin button($colour) {
+	background: $colour;
+	border: 1px solid darken($colour, 15%);
+	box-shadow: 0 1px 1px darken($colour, 20%), inset 0 1px 1px 0 lighten($colour, 25%);
+}

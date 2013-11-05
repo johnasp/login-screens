@@ -1,0 +1,11 @@
+form[name="register"] {
+	position: relative;
+	label {
+		border: 1px solid $border;
+		background: $label;
+		padding: $padding;
+	}
+	[name="submit"] {
+		@include button($green);
+	}
+}

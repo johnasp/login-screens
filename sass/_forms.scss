@@ -1,0 +1,21 @@
+input {
+	font-size: 20px;
+	color: lighten($gray, 35%);
+	border: 1px solid $border;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: $padding; 
+	position: relative;
+}
+
+[name="submit"] {
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: $corners;
+	@include text-shadow(rgba(black, 0.4) 1px 1px 0);
+	margin-bottom: $gutter;
+}
+
+

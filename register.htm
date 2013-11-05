@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="css/global.css" > 
+
+</head>
+<body>
+
+<div class="container">
+<h1>kiddicare</h1>
+<form name="register" method="post">
+<h2>Personal Details</h2>
+<p>Please enter your contact details in the fields below.</p>
+
+<label for="title">Title</label>
+<select name="title">
+    <option value="Mr">Mr</option>
+    <option value="Mrs">Mrs</option>
+    <option value="Miss">Miss</option>
+    <option value="Ms">Ms</option>
+</select>
+
+<label for="forename">First Name</label>
+<input name="forename" type="text" value="John" />
+
+<label for="surname">Last Name</label>
+<input name="surname" type="text" value="Aspinall" />
+
+<label for="email">Email</label>
+<input name="email" type="email" value="john.aspinall73@gmai" />
+
+<h2>Choose a password</h2>
+<p>Passwords must be at least 6 characters in length, and include 1 digit(s) and 1 letter(s).</p>
+
+<label for="new-password">New Password</label>
+<input name="new-password" type="text" />
+
+<label for="verify">Verify</label>
+<input name="verify" type="text" />
+
+<label for="promotional">Yes, I'd like to receive offers and promotions from Kiddicare.  <a href="#">Privacy Policy</a></label>
+<input type="checkbox" />
+
+
+<input name="submit" type="submit" value="Register" />
+</form>
+
+
+
+</div>
+
+</body>
+</html>
