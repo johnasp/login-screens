@@ -1,12 +1,13 @@
-p, li, input, a, label {
+p, li, input, a, label, .filler {
 	@include font-stack-body();
+	font-size: 18px;
 }
 a {
 	color: $blue;
 }
 p {
 	color: lighten($gray, 10%);
-	font-size: 18px; 
+ 
 	margin-top: 0;
 }
 h1 {

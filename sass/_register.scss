@@ -3,24 +3,34 @@ form[name="register"] {
 	label {
 		border-left: 1px solid $border;
 		border-top: 1px solid $border;
+		border-bottom: 1px solid $border;
 		background: $label;
 		padding: $padding;
 		display: inline-block;
 		color: darken($label,40%);
-		border-top-left-radius: $corners;
+		width: 28%;
+		margin-right: -4px;
 	}
+	[for="forename"], [for="surname"], [for="email"], [for="verify"], input[name="forename"], input[name="surname"], input[name="email"], input[name="verify"] {
+		border-top: none;
+		
+	}
+
 	select {
 		display: block;
 		margin-bottom: $padding;
 	}
-	[type="text"], [type="email"], [type="password"] {
+	[type="text"], [type="email"], [type="password"], .filler {
 		display: inline-block!important;
-		border-top-right-radius: $corners;
 		border: 1px solid $border;
 		border-left: none;
+		width:60%;
 	}
-	[name="surname"] {
-		border-radius: 0;
+	[for="title"], [for="new-password"] {
+		border-top-left-radius: $corners;
+	}
+	.filler, input[name="new-password"] {
+		border-top-right-radius: $corners;
 	}
 
 }
