@@ -1,6 +1,9 @@
-p, li, input, a, label, .filler {
+p, li, a {
 	@include font-stack-body();
 	font-size: 18px;
+}
+label, input, .filler {
+	font-size:14px;
 }
 a {
 	color: $blue;

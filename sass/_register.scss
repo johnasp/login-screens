@@ -1,5 +1,10 @@
 form[name="register"] {
 	position: relative;
+	margin: 0 $gutter;
+	.filler {
+		background: #fff;
+		display: inline-block!important;
+	}
 	label {
 		border-left: 1px solid $border;
 		border-top: 1px solid $border;
@@ -8,23 +13,21 @@ form[name="register"] {
 		padding: $padding;
 		display: inline-block;
 		color: darken($label,40%);
-		width: 28%;
+		width: 95px;
 		margin-right: -4px;
 	}
 	[for="forename"], [for="surname"], [for="email"], [for="verify"], input[name="forename"], input[name="surname"], input[name="email"], input[name="verify"] {
 		border-top: none;
 		
 	}
-
 	select {
 		display: block;
 		margin-bottom: $padding;
 	}
 	[type="text"], [type="email"], [type="password"], .filler {
-		display: inline-block!important;
 		border: 1px solid $border;
 		border-left: none;
-		width:60%;
+		width: 64%;
 	}
 	[for="title"], [for="new-password"] {
 		border-top-left-radius: $corners;
@@ -32,7 +35,18 @@ form[name="register"] {
 	.filler, input[name="new-password"] {
 		border-top-right-radius: $corners;
 	}
-
+	[for="email"], [for="verify"] {
+		border-bottom-left-radius: $corners;		
+	}
+	[name="email"], [name="verify"] {
+		border-bottom-right-radius: $corners;		
+	}
+	[name="verify"] {
+		margin-bottom: $padding;
+	}
+	[type="checkbox"] {
+		width: 50px;
+	}
 }
 	[name="register-but"] {
 		@include button($green);

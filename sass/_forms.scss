@@ -1,12 +1,9 @@
 input, .filler {
-	font-size: 18px;
 	color: lighten($gray, 35%);
 	box-sizing: border-box;
 	padding: $padding; 
 }
-.filler {
-	background: #fff;
-}
+
 [name="submit"] {
 	color: white;
 	font-weight: bold;

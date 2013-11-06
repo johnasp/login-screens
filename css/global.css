@@ -431,23 +431,28 @@ table {
 }
 
 /* line 1, ../sass/_typography.scss */
-p, li, input, a, label, .filler {
+p, li, a {
   font-family: proxima_nova_softregular, sans-serif;
   font-size: 18px;
 }
 
 /* line 5, ../sass/_typography.scss */
+label, input, .filler {
+  font-size: 14px;
+}
+
+/* line 8, ../sass/_typography.scss */
 a {
   color: #0091bb;
 }
 
-/* line 8, ../sass/_typography.scss */
+/* line 11, ../sass/_typography.scss */
 p {
   color: #7d7d7d;
   margin-top: 0;
 }
 
-/* line 13, ../sass/_typography.scss */
+/* line 16, ../sass/_typography.scss */
 h1 {
   font-family: Kiddicare, sans-serif;
   color: #0091bb;
@@ -456,7 +461,7 @@ h1 {
   text-align: center;
 }
 
-/* line 20, ../sass/_typography.scss */
+/* line 23, ../sass/_typography.scss */
 h2 {
   font-family: proxima_nova_softregular, sans-serif;
   color: #636363;
@@ -467,18 +472,12 @@ h2 {
 
 /* line 1, ../sass/_forms.scss */
 input, .filler {
-  font-size: 18px;
   color: #bcbcbc;
   box-sizing: border-box;
   padding: 16px;
 }
 
 /* line 7, ../sass/_forms.scss */
-.filler {
-  background: #fff;
-}
-
-/* line 10, ../sass/_forms.scss */
 [name="submit"] {
   color: white;
   font-weight: bold;
@@ -530,8 +529,14 @@ form[name="login"] [name="submit"] {
 /* line 1, ../sass/_register.scss */
 form[name="register"] {
   position: relative;
+  margin: 0 18px;
 }
-/* line 3, ../sass/_register.scss */
+/* line 4, ../sass/_register.scss */
+form[name="register"] .filler {
+  background: #fff;
+  display: inline-block !important;
+}
+/* line 8, ../sass/_register.scss */
 form[name="register"] label {
   border-left: 1px solid #969696;
   border-top: 1px solid #969696;
@@ -540,35 +545,50 @@ form[name="register"] label {
   padding: 16px;
   display: inline-block;
   color: #898989;
-  width: 28%;
+  width: 95px;
   margin-right: -4px;
 }
-/* line 14, ../sass/_register.scss */
+/* line 19, ../sass/_register.scss */
 form[name="register"] [for="forename"], form[name="register"] [for="surname"], form[name="register"] [for="email"], form[name="register"] [for="verify"], form[name="register"] input[name="forename"], form[name="register"] input[name="surname"], form[name="register"] input[name="email"], form[name="register"] input[name="verify"] {
   border-top: none;
 }
-/* line 19, ../sass/_register.scss */
+/* line 23, ../sass/_register.scss */
 form[name="register"] select {
   display: block;
   margin-bottom: 16px;
 }
-/* line 23, ../sass/_register.scss */
+/* line 27, ../sass/_register.scss */
 form[name="register"] [type="text"], form[name="register"] [type="email"], form[name="register"] [type="password"], form[name="register"] .filler {
-  display: inline-block !important;
   border: 1px solid #969696;
   border-left: none;
-  width: 60%;
+  width: 64%;
 }
-/* line 29, ../sass/_register.scss */
+/* line 32, ../sass/_register.scss */
 form[name="register"] [for="title"], form[name="register"] [for="new-password"] {
   border-top-left-radius: 8px;
 }
-/* line 32, ../sass/_register.scss */
+/* line 35, ../sass/_register.scss */
 form[name="register"] .filler, form[name="register"] input[name="new-password"] {
   border-top-right-radius: 8px;
 }
+/* line 38, ../sass/_register.scss */
+form[name="register"] [for="email"], form[name="register"] [for="verify"] {
+  border-bottom-left-radius: 8px;
+}
+/* line 41, ../sass/_register.scss */
+form[name="register"] [name="email"], form[name="register"] [name="verify"] {
+  border-bottom-right-radius: 8px;
+}
+/* line 44, ../sass/_register.scss */
+form[name="register"] [name="verify"] {
+  margin-bottom: 16px;
+}
+/* line 47, ../sass/_register.scss */
+form[name="register"] [type="checkbox"] {
+  width: 50px;
+}
 
-/* line 37, ../sass/_register.scss */
+/* line 51, ../sass/_register.scss */
 [name="register-but"] {
   background: #81be1d;
   border: 1px solid #547c13;
@@ -578,5 +598,5 @@ form[name="register"] .filler, form[name="register"] input[name="new-password"] 
 /* line 12, ../sass/global.scss */
 body {
   background: url(../images/background.png);
-  padding: 0 18px;
+  padding: 0;
 }
