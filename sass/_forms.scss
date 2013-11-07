@@ -1,9 +1,12 @@
-input, .filler {
+form {
+	margin: 0 auto;
+	width: 95%;
+}
+input, .filler, select {
 	color: lighten($gray, 35%);
 	box-sizing: border-box;
 	padding: $padding; 
 }
-
 [name="submit"] {
 	color: white;
 	font-weight: bold;
@@ -12,5 +15,3 @@ input, .filler {
 	@include text-shadow(rgba(black, 0.4) 1px 1px 0);
 	margin-bottom: $gutter;
 }
-
-

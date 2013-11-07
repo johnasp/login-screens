@@ -2,15 +2,14 @@ p, li, a {
 	@include font-stack-body();
 	font-size: 18px;
 }
-label, input, .filler {
-	font-size:14px;
+label, input, select, .filler {
+	font-size: 14px;
 }
 a {
 	color: $blue;
 }
 p {
 	color: lighten($gray, 10%);
- 
 	margin-top: 0;
 }
 h1 {

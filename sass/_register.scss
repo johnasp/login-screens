@@ -1,39 +1,53 @@
 form[name="register"] {
-	position: relative;
-	margin: 0 $gutter;
-	.filler {
-		background: #fff;
-		display: inline-block!important;
-	}
+	.wrapper {position:relative;}
 	label {
 		border-left: 1px solid $border;
 		border-top: 1px solid $border;
 		border-bottom: 1px solid $border;
 		background: $label;
 		padding: $padding;
-		display: inline-block;
 		color: darken($label,40%);
 		width: 95px;
-		margin-right: -4px;
+		position: absolute;
 	}
 	[for="forename"], [for="surname"], [for="email"], [for="verify"], input[name="forename"], input[name="surname"], input[name="email"], input[name="verify"] {
 		border-top: none;
-		
 	}
-	select {
-		display: block;
-		margin-bottom: $padding;
-	}
-	[type="text"], [type="email"], [type="password"], .filler {
+	[type="text"], [type="email"], [type="password"], .filler, select {
 		border: 1px solid $border;
 		border-left: none;
-		width: 64%;
+		width: 100%;
+		padding-left: 155px;
+	}
+	[type="email"] {
+		border-bottom-left-radius: $corners;		
+	}
+	.filler {
+		background: #fff;
+		display: inline-block!important;
+		border-top-left-radius: $corners;
 	}
 	[for="title"], [for="new-password"] {
 		border-top-left-radius: $corners;
 	}
 	.filler, input[name="new-password"] {
 		border-top-right-radius: $corners;
+	}
+	select {
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		padding-bottom: 14px;
+		option {
+			background: lighten($green, 55%);
+			margin-bottom: 4px;
+
+		}
+	}
+	[name="new-password"] {
+		border-top-left-radius: $corners;	
+	}
+	[name="verify"] {
+		border-bottom-left-radius: $corners;	
 	}
 	[for="email"], [for="verify"] {
 		border-bottom-left-radius: $corners;		
@@ -47,7 +61,8 @@ form[name="register"] {
 	[type="checkbox"] {
 		width: 50px;
 	}
-}
-	[name="register-but"] {
+	[name="submit"] {
 		@include button($green);
+		width:100%;
 	}
+}
